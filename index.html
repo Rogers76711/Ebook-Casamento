@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Fazer um Discurso de Casamento — Ebook Guia Completo</title>
+  <meta name="description"
+    content="Aprenda a fazer um discurso de casamento inesquecível. Guia completo com exemplos, estrutura, dicas de oratória e tudo que você precisa para emocionar todos os convidados.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ============= RESET & BASE ============= */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1120;
+      color: #e8e8e8;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============= ANIMATIONS ============= */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(-2deg);
+      }
+
+      50% {
+        transform: translateY(-15px) rotate(0deg);
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(212, 168, 83, 0.6);
+      }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============= STICKY HEADER ============= */
+    .top-bar {
+      background: linear-gradient(90deg, #d4a853, #f0cc72, #d4a853);
+      color: #0b1120;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-size: 200% auto;
+      animation: shimmer 3s linear infinite;
+    }
+
+    .top-bar span {
+      display: inline-block;
+    }
+
+    /* ============= HERO SECTION ============= */
+    .hero {
+      background: linear-gradient(160deg, #0b1120 0%, #142038 40%, #1a2d50 100%);
+      padding: 80px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -200px;
+      left: -200px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .hero .container {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text {
+      flex: 1;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(212, 168, 83, 0.15);
+      border: 1px solid rgba(212, 168, 83, 0.4);
+      color: #d4a853;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero-text h1 span {
+      background: linear-gradient(135deg, #d4a853 0%, #f0cc72 50%, #d4a853 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-text .subtitle {
+      font-size: clamp(16px, 2vw, 20px);
+      color: #b0bec5;
+      margin-bottom: 32px;
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #d4a853 0%, #c49240 100%);
+      color: #0b1120;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 30px rgba(212, 168, 83, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(212, 168, 83, 0.5);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #d4a853;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      border: 2px solid rgba(212, 168, 83, 0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(212, 168, 83, 0.1);
+      border-color: #d4a853;
+      transform: translateY(-3px);
+    }
+
+    .hero-image {
+      flex: 0 0 320px;
+      display: flex;
+      justify-content: center;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .ebook-cover-wrapper {
+      position: relative;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .ebook-cover-wrapper img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(212, 168, 83, 0.2);
+    }
+
+    .ebook-cover-wrapper::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(212, 168, 83, 0.3), transparent, rgba(212, 168, 83, 0.3));
+      z-index: -1;
+    }
+
+    /* ============= PAIN SECTION ============= */
+    .pain-section {
+      background: linear-gradient(180deg, #0e1628 0%, #121d33 100%);
+      padding: 80px 0;
+    }
+
+    .pain-section h2 {
+      font-size: clamp(26px, 4vw, 40px);
+      text-align: center;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .pain-section h2 span {
+      color: #d4a853;
+    }
+
+    .pain-subtitle {
+      text-align: center;
+      color: #8899aa;
+      font-size: 17px;
+      margin-bottom: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .pain-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: all 0.3s ease;
+    }
+
+    .pain-card:hover {
+      background: rgba(212, 168, 83, 0.05);
+      border-color: rgba(212, 168, 83, 0.2);
+      transform: translateY(-4px);
+    }
+
+    .pain-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 168, 83, 0.1);
+      border-radius: 12px;
+    }
+
+    .pain-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .pain-card p {
+      font-size: 14px;
+      color: #8899aa;
+      line-height: 1.5;
+    }
+
+    /* ============= BENEFITS SECTION ============= */
+    .benefits-section {
+      background: linear-gradient(180deg, #121d33 0%, #0f1829 100%);
+      padding: 80px 0;
+    }
+
+    .section-label {
+      display: inline-block;
+      background: rgba(212, 168, 83, 0.12);
+      color: #d4a853;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(26px, 4vw, 40px);
+      color: #ffffff;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-title span {
+      color: #d4a853;
+    }
+
+    .section-desc {
+      color: #8899aa;
+      font-size: 16px;
+      margin-bottom: 50px;
+      max-width: 600px;
+    }
+
+    .benefits-section .container>.section-label,
+    .benefits-section .container>.section-title,
+    .benefits-section .container>.section-desc {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .benefits-section .container>.section-label {
+      display: inline-block;
+      text-align: center;
+      width: auto;
+    }
+
+    .benefits-section .container {
+      text-align: center;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 28px;
+      text-align: left;
+    }
+
+    .benefit-card {
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 20px;
+      padding: 32px;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #d4a853, #f0cc72);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 168, 83, 0.3);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .benefit-emoji {
+      font-size: 36px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .benefit-card h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .benefit-card p {
+      font-size: 14px;
+      color: #8899aa;
+      line-height: 1.7;
+    }
+
+    /* ============= AUDIENCE SECTION ============= */
+    .audience-section {
+      background: linear-gradient(180deg, #0f1829 0%, #0d1422 100%);
+      padding: 80px 0;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .audience-card {
+      text-align: center;
+      padding: 36px 24px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .audience-card:hover {
+      background: rgba(212, 168, 83, 0.05);
+      border-color: rgba(212, 168, 83, 0.2);
+      transform: translateY(-6px);
+    }
+
+    .audience-emoji {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .audience-card h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .audience-card p {
+      font-size: 13px;
+      color: #7a8b9c;
+    }
+
+    /* ============= TESTIMONIALS SECTION ============= */
+    .testimonials-section {
+      background: linear-gradient(180deg, #0d1422 0%, #111c30 100%);
+      padding: 80px 0;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 50px;
+    }
+
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 32px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(212, 168, 83, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 80px;
+      color: rgba(212, 168, 83, 0.15);
+      position: absolute;
+      top: 10px;
+      left: 24px;
+      line-height: 1;
+    }
+
+    .stars {
+      color: #d4a853;
+      font-size: 16px;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-text {
+      font-size: 15px;
+      color: #c0cad6;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-style: italic;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #d4a853, #c49240);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0b1120;
+    }
+
+    .author-info strong {
+      display: block;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .author-info span {
+      color: #d4a853;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* ============= CONTENTS SECTION ============= */
+    .contents-section {
+      background: linear-gradient(180deg, #111c30 0%, #0f1829 100%);
+      padding: 80px 0;
+    }
+
+    .contents-list {
+      max-width: 650px;
+      margin: 50px auto 0;
+    }
+
+    .contents-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.3s ease;
+    }
+
+    .contents-item:last-child {
+      border-bottom: none;
+    }
+
+    .contents-item:hover {
+      padding-left: 12px;
+    }
+
+    .check-icon {
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(135deg, #d4a853, #c49240);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 14px;
+      color: #0b1120;
+      font-weight: 700;
+    }
+
+    .contents-item span {
+      font-size: 16px;
+      color: #c0cad6;
+    }
+
+    /* ============= OFFER / PRICING SECTION ============= */
+    .offer-section {
+      background: linear-gradient(180deg, #0f1829 0%, #0b1120 50%, #0f1829 100%);
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .offer-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(212, 168, 83, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .offer-box {
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: center;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+      border: 1px solid rgba(212, 168, 83, 0.2);
+      border-radius: 28px;
+      padding: 50px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .offer-label {
+      display: inline-block;
+      background: linear-gradient(135deg, #d4a853, #f0cc72);
+      color: #0b1120;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    .offer-box h2 {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .offer-box .old-price {
+      font-size: 18px;
+      color: #667788;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+
+    .offer-box .price {
+      font-size: clamp(48px, 8vw, 64px);
+      font-weight: 900;
+      background: linear-gradient(135deg, #d4a853, #f0cc72);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .offer-box .price-note {
+      font-size: 14px;
+      color: #8899aa;
+      margin-bottom: 32px;
+    }
+
+    .offer-features {
+      text-align: left;
+      margin-bottom: 36px;
+    }
+
+    .offer-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      font-size: 15px;
+      color: #c0cad6;
+    }
+
+    .offer-feature-item .feat-check {
+      color: #d4a853;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .cta-big {
+      display: inline-block;
+      background: linear-gradient(135deg, #d4a853 0%, #c49240 100%);
+      color: #0b1120;
+      padding: 20px 56px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 40px rgba(212, 168, 83, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      animation: glow 2.5s ease-in-out infinite;
+    }
+
+    .cta-big:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 16px 50px rgba(212, 168, 83, 0.55);
+    }
+
+    .guarantee-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 24px;
+      font-size: 14px;
+      color: #8899aa;
+    }
+
+    .guarantee-icon {
+      font-size: 20px;
+    }
+
+    /* ============= SAMPLE SECTION ============= */
+    .sample-section {
+      background: linear-gradient(180deg, #0f1829 0%, #121d33 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .sample-box {
+      max-width: 550px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 48px 40px;
+    }
+
+    .sample-box h2 {
+      font-size: 30px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .sample-box h2 span {
+      color: #d4a853;
+    }
+
+    .sample-box p {
+      color: #8899aa;
+      font-size: 15px;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .btn-sample {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #d4a853;
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      border: 2px solid #d4a853;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-sample:hover {
+      background: #d4a853;
+      color: #0b1120;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(212, 168, 83, 0.3);
+    }
+
+    /* ============= FAQ SECTION ============= */
+    .faq-section {
+      background: linear-gradient(180deg, #121d33 0%, #0d1422 100%);
+      padding: 80px 0;
+    }
+
+    .faq-list {
+      max-width: 700px;
+      margin: 50px auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: #ffffff;
+      padding: 22px 0;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      color: #d4a853;
+    }
+
+    .faq-arrow {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+      color: #d4a853;
+    }
+
+    .faq-item.active .faq-arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding-bottom: 22px;
+    }
+
+    .faq-answer p {
+      font-size: 14px;
+      color: #8899aa;
+      line-height: 1.7;
+    }
+
+    /* ============= FINAL CTA ============= */
+    .final-cta {
+      background: linear-gradient(180deg, #0d1422 0%, #0b1120 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(24px, 4vw, 36px);
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .final-cta h2 span {
+      color: #d4a853;
+    }
+
+    .final-cta p {
+      color: #8899aa;
+      font-size: 16px;
+      margin-bottom: 36px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ============= FOOTER ============= */
+    .footer {
+      background: #080d18;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 36px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: #556677;
+    }
+
+    .footer .footer-links {
+      margin-top: 12px;
+    }
+
+    .footer .footer-links a {
+      color: #7a8b9c;
+      font-size: 13px;
+      margin: 0 12px;
+      transition: color 0.3s ease;
+    }
+
+    .footer .footer-links a:hover {
+      color: #d4a853;
+    }
+
+    /* ============= RESPONSIVE ============= */
+    @media (max-width: 768px) {
+      .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+      }
+
+      .hero-text .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-image {
+        flex: none;
+      }
+
+      .ebook-cover-wrapper img {
+        width: 220px;
+      }
+
+      .pain-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-box {
+        padding: 36px 24px;
+      }
+
+      .sample-box {
+        padding: 36px 24px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .cta-big {
+        padding: 18px 40px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Urgency Bar -->
+  <div class="top-bar">
+    <span>🔥 Oferta Especial por Tempo Limitado — Garanta seu ebook com desconto!</span>
+  </div>
+
+  <!-- ============= HERO SECTION ============= -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-text">
+        <div class="hero-badge">📖 Ebook Digital — Acesso Imediato</div>
+        <h1>Como Fazer um <span>Discurso de Casamento</span> Inesquecível</h1>
+        <p class="subtitle">O guia definitivo para emocionar, inspirar e marcar para sempre o dia mais especial da vida
+          de quem você ama. Nunca mais tenha medo de falar em público num casamento.</p>
+        <div class="hero-buttons">
+          <a href="#oferta" class="btn-primary" id="heroBuyBtn">🛒 Quero Meu Ebook Agora</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="ebook-cover-wrapper">
+          <img src="ebook_cover.png" alt="Capa do Ebook — Como Fazer um Discurso de Casamento" id="ebookCoverImg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= PAIN / IDENTIFICATION SECTION ============= -->
+  <section class="pain-section" id="problemas">
+    <div class="container">
+      <h2 class="animate-on-scroll">Você se <span>identifica</span> com alguma dessas situações?</h2>
+      <p class="pain-subtitle animate-on-scroll">Se a resposta for sim para qualquer uma delas, este ebook foi feito
+        para você.</p>
+      <div class="pain-grid">
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">😰</div>
+          <div>
+            <h4>Medo de passar vergonha</h4>
+            <p>A ideia de falar na frente de todos os convidados faz seu coração acelerar e sua mente travar?</p>
+          </div>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">🤷</div>
+          <div>
+            <h4>Não sabe por onde começar</h4>
+            <p>Olha para a folha em branco e não tem ideia de como estruturar um discurso que faça sentido?</p>
+          </div>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">😬</div>
+          <div>
+            <h4>Medo de falar algo errado</h4>
+            <p>Tem receio de contar uma história inadequada ou fazer uma piada que ninguém ache graça?</p>
+          </div>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">😢</div>
+          <div>
+            <h4>Quer emocionar mas não sabe como</h4>
+            <p>Quer que todos chorem de emoção, mas não consegue colocar seus sentimentos em palavras?</p>
+          </div>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">⏰</div>
+          <div>
+            <h4>Casamento se aproximando</h4>
+            <p>O dia está chegando e você ainda não tem nada preparado. A ansiedade só aumenta?</p>
+          </div>
+        </div>
+        <div class="pain-card animate-on-scroll">
+          <div class="pain-icon">🎤</div>
+          <div>
+            <h4>Nunca falou em público</h4>
+            <p>A ideia de pegar um microfone faz suas mãos suarem e a voz tremer só de imaginar?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= BENEFITS SECTION ============= -->
+  <section class="benefits-section" id="beneficios">
+    <div class="container">
+      <span class="section-label animate-on-scroll">O que você vai aprender</span>
+      <h2 class="section-title animate-on-scroll">Tudo que você precisa para <span>brilhar</span> no grande dia</h2>
+      <p class="section-desc animate-on-scroll">Dentro do ebook, você encontra um método completo, passo a passo, para
+        criar um discurso autêntico e inesquecível.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">💍</span>
+          <h3>Tipos de Discurso</h3>
+          <p>Aprenda as diferenças e particularidades dos discursos de padrinho, madrinha, pais dos noivos, amigos e até
+            dos próprios noivos.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">📝</span>
+          <h3>Estrutura Passo a Passo</h3>
+          <p>Abertura impactante, desenvolvimento com histórias pessoais, mensagens do coração e encerramento
+            emocionante — tudo detalhado.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">🚫</span>
+          <h3>O Que Nunca Dizer</h3>
+          <p>Descubra as frases proibidas, os temas que devem ser evitados e os erros que podem arruinar o momento.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">📖</span>
+          <h3>Exemplos Prontos</h3>
+          <p>Modelos de discursos reais para você se inspirar, adaptar e personalizar conforme sua relação com os
+            noivos.</p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">🎙️</span>
+          <h3>Dicas de Oratória</h3>
+          <p>Técnicas profissionais de tom de voz, pausas dramáticas, postura e como controlar o nervosismo na hora H.
+          </p>
+        </div>
+        <div class="benefit-card animate-on-scroll">
+          <span class="benefit-emoji">💪</span>
+          <h3>Controle Emocional</h3>
+          <p>Aprenda como lidar com a emoção, o choro e manter a compostura para entregar um discurso poderoso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= AUDIENCE SECTION ============= -->
+  <section class="audience-section" id="para-quem">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-label animate-on-scroll">Para quem é esse ebook</span>
+        <h2 class="section-title animate-on-scroll" style="text-align: center;">Este ebook é <span>perfeito</span> para
+          você se é:</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card animate-on-scroll">
+          <span class="audience-emoji">🤵</span>
+          <h4>Padrinho</h4>
+          <p>Honre a amizade com um discurso memorável</p>
+        </div>
+        <div class="audience-card animate-on-scroll">
+          <span class="audience-emoji">👗</span>
+          <h4>Madrinha</h4>
+          <p>Emocione a noiva e todos os convidados</p>
+        </div>
+        <div class="audience-card animate-on-scroll">
+          <span class="audience-emoji">👨‍👩‍👧</span>
+          <h4>Pai ou Mãe</h4>
+          <p>Expresse seu amor e orgulho neste momento único</p>
+        </div>
+        <div class="audience-card animate-on-scroll">
+          <span class="audience-emoji">💑</span>
+          <h4>Noivo ou Noiva</h4>
+          <p>Declare seu amor de forma inesquecível</p>
+        </div>
+        <div class="audience-card animate-on-scroll">
+          <span class="audience-emoji">🤝</span>
+          <h4>Amigo(a) Próximo</h4>
+          <p>Celebre a amizade com palavras que tocam o coração</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= TESTIMONIALS SECTION ============= -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-label animate-on-scroll">Prova Social</span>
+        <h2 class="section-title animate-on-scroll" style="text-align: center;">Veja o que dizem quem já <span>usou o
+            ebook</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Com este ebook consegui fazer um discurso que emocionou todos os convidados. Minha
+            noiva chorou de alegria! Nunca imaginei que conseguiria falar tão bem em público.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div class="author-info">
+              <strong>João Silva</strong>
+              <span>Noivo — São Paulo, SP</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Eu tinha pavor de falar em público. Depois de ler o ebook, me senti preparada e
+            confiante. Fiz o discurso de madrinha mais bonito que todos já viram! Vale cada centavo.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div class="author-info">
+              <strong>Ana Clara Mendes</strong>
+              <span>Madrinha — Rio de Janeiro, RJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-on-scroll">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Como pai da noiva, eu estava nervosíssimo. O ebook me deu a estrutura perfeita e
+            exemplos que pude adaptar. Foi um dos momentos mais bonitos da minha vida.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div class="author-info">
+              <strong>Roberto Lima</strong>
+              <span>Pai da noiva — Belo Horizonte, MG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= CONTENTS SECTION ============= -->
+  <section class="contents-section" id="conteudo">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-label animate-on-scroll">Conteúdo do Ebook</span>
+        <h2 class="section-title animate-on-scroll" style="text-align: center;">Veja tudo que está <span>incluso</span>
+        </h2>
+      </div>
+      <div class="contents-list">
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Introdução — A importância de um bom discurso de casamento</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Os diferentes tipos de discurso (padrinho, madrinha, pais, noivos)</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Estrutura completa passo a passo — do início ao fim</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>O que dizer e o que NUNCA dizer em um discurso</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Exemplos prontos para você adaptar</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Técnicas de oratória para iniciantes</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Como controlar a emoção e o nervosismo</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Dicas de um orador profissional para brilhar no microfone</span>
+        </div>
+        <div class="contents-item animate-on-scroll">
+          <div class="check-icon">✓</div>
+          <span>Bônus: Checklist de preparação para o grande dia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= OFFER / PRICING SECTION ============= -->
+  <section class="offer-section" id="oferta">
+    <div class="container">
+      <div class="offer-box animate-on-scroll">
+        <div class="offer-label">🔥 Oferta Especial</div>
+        <h2>Acesso Imediato ao Ebook Completo</h2>
+        <div class="old-price">De R$ 47,00</div>
+        <div class="price">R$ 27,00</div>
+        <div class="price-note">Pagamento único — acesso vitalício ao conteúdo em PDF</div>
+        <div class="offer-features">
+          <div class="offer-feature-item">
+            <span class="feat-check">✔</span>
+            <span>Ebook completo em PDF — leia em qualquer dispositivo</span>
+          </div>
+          <div class="offer-feature-item">
+            <span class="feat-check">✔</span>
+            <span>Exemplos prontos para adaptar ao seu discurso</span>
+          </div>
+          <div class="offer-feature-item">
+            <span class="feat-check">✔</span>
+            <span>Técnicas de oratória profissional</span>
+          </div>
+          <div class="offer-feature-item">
+            <span class="feat-check">✔</span>
+            <span>Bônus: Checklist de preparação exclusivo</span>
+          </div>
+          <div class="offer-feature-item">
+            <span class="feat-check">✔</span>
+            <span>Acesso imediato após a compra</span>
+          </div>
+        </div>
+        <a href="https://chk.eduzz.com/69KABK5V0O" target="_blank" rel="noopener noreferrer" class="cta-big"
+          id="checkoutBtn">🛒 Comprar Agora — R$ 27,00</a>
+        <div class="guarantee-row">
+          <span class="guarantee-icon">🔒</span>
+          <span>Garantia de 7 dias — se não gostar, devolvemos seu dinheiro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ============= FAQ SECTION ============= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div style="text-align: center;">
+        <span class="section-label animate-on-scroll">Dúvidas Frequentes</span>
+        <h2 class="section-title animate-on-scroll" style="text-align: center;">Perguntas <span>Frequentes</span></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Como recebo o ebook após a compra?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Imediatamente após a confirmação do pagamento, você recebe o ebook em PDF por e-mail e também pode fazer
+              o download direto na página de confirmação. É instantâneo!</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>O ebook serve para qualquer tipo de discurso de casamento?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! O ebook cobre discursos de padrinho, madrinha, pais dos noivos, amigos e até dos próprios noivos.
+              Cada tipo tem suas particularidades e exemplos específicos.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Nunca falei em público. O ebook vai me ajudar?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Com certeza! O ebook foi feito pensando em pessoas que nunca falaram em público. Inclui técnicas de
+              oratória para iniciantes, dicas para controlar o nervosismo e uma estrutura simples que qualquer pessoa
+              pode seguir.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Posso pedir reembolso se não gostar?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, basta nos
+              enviar um e-mail e devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Em qual formato vem o ebook?</span>
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>O ebook vem em formato PDF, compatível com celular, tablet, computador e pode ser impresso. Você pode ler
+              onde e quando quiser!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= FINAL CTA SECTION ============= -->
+  <section class="final-cta">
+    <div class="container animate-on-scroll">
+      <h2>Não deixe para <span>última hora</span></h2>
+      <p>O casamento está chegando. Prepare o discurso que vai emocionar todos e ficar na memória para sempre.</p>
+      <a href="#oferta" class="cta-big" style="animation: none;">🛒 Garantir Meu Ebook — R$ 27,00</a>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER ============= -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Como Fazer um Discurso de Casamento. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============= SCRIPTS ============= -->
+  <script>
+    // ===== Scroll reveal animation =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ===== FAQ Accordion =====
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+
+      // Close all others
+      document.querySelectorAll('.faq-item.active').forEach(i => {
+        i.classList.remove('active');
+      });
+
+      // Toggle current
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // ===== Smooth scroll for anchor links =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+
+  </script>
+</body>
+
+</html>
